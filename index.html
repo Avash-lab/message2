@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Night</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0e68c; /* Light golden color */
+            font-family: Arial, sans-serif;
+        }
+        #message {
+            display: none;
+            font-size: 2em;
+            color: #2e8b57; /* SeaGreen */
+            text-align: center;
+        }
+        #clickMeButton {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4682b4; /* SteelBlue */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #clickMeButton:hover {
+            background-color: #5f9ea0; /* Darker SteelBlue */
+        }
+    </style>
+</head>
+<body>
+    <button id="clickMeButton">Click Me</button>
+    <h1 id="message">Huss ta Good night</h1>
+
+    <script>
+        document.getElementById('clickMeButton').addEventListener('click', function() {
+            document.getElementById('message').style.display = 'block';
+            this.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
